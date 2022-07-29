@@ -25,7 +25,7 @@ conn.login(SF_USERNAME, SF_PASSWORD, (error, userInfo) => {
 
 app.post('/', (req, res) => {
     // console.log(req.body);
-    res.status(200).json('Server worked');
+    res.status(200).json(`Server worked with redirect ${redir}`);
 })
 
 app.get('/', (req, res) => {
